@@ -29,16 +29,16 @@ public class LearnBoxState implements State {
 		LearnBox box = ConjugationTrainer.currentLearnBox;
 		out.write("Optionen für Lernbox " + box.getName() + ":");
 		out.newLine();
-		out.write("1. Wörter anzeigen\n" + "2. Wort hinzufügen\n" + "3. Nach Zeitformen lernen\n"
-				+ "4. Alle Formen lernen\n" + "5. Häufig falsche Wörter lernen\n" + "6. Box speichern\n"
-				+ "7. Box löschen\n" + "q  Zurück zum Hauptmenü\n");
+		out.write("1. Wörter anzeigen\n" + "2. Wort hinzufügen\n" + "3. Bedeutung hinzufügen\n"
+				+ "4. Nach Zeitformen lernen\n" + "5. Alle Formen lernen\n" + "6. Häufig falsche Wörter lernen\n"
+				+ "7. Box speichern\n" + "8. Box löschen\n" + "q  Zurück zum Hauptmenü\n");
 		out.flush();
 
 		// Einlesen
 		boolean fail = false;
 		String input = in.readLine();
 		if (input.equals("q") || input.equals("quit")) {
-			ConjugationTrainer.changeState(ConjugationTrainer.quit);
+			ConjugationTrainer.changeState(ConjugationTrainer.mainMenuState);
 		} else {
 			int zahl = -1;
 			try {
@@ -73,26 +73,30 @@ public class LearnBoxState implements State {
 					break;
 				}
 				case 3: {
-					ConjugationTrainer.changeState(ConjugationTrainer.learnTenseState);
+					ConjugationTrainer.changeState(ConjugationTrainer.addMeaningState);
 					break;
 				}
 				case 4: {
-					ConjugationTrainer.changeState(ConjugationTrainer.learnAllTensesState);
+					ConjugationTrainer.changeState(ConjugationTrainer.learnTenseState);
 					break;
 				}
 				case 5: {
+					ConjugationTrainer.changeState(ConjugationTrainer.learnAllTensesState);
+					break;
+				}
+				case 6: {
 					box.refreshFrequentWrongVerbList();
 					ConjugationTrainer.changeState(ConjugationTrainer.frequentState);
 					break;
 				}
-				case 6: {
+				case 7: {
 					box.saveLearnBox(null);
 					out.write("Lernbox " + box.getName() + " mit " + box.getVerbs().size() + " Wörtern gespeichert!");
 					out.newLine();
 					out.flush();
 					break;
 				}
-				case 7: {
+				case 8: {
 					out.write("Wollen Sie die Lernbox " + box.getName() + " mit " + box.getVerbs().size()
 							+ " Wörtern wirklich löschen?(Y/N)");
 					out.newLine();

@@ -17,7 +17,7 @@ ser,2
 ir,2
 morir,1
 jugar
-caer,2
+caer,3
 oír,5
 leer,4
 buscar
@@ -26,3 +26,4 @@ vivir
 terminar,2
 andar,1
 perder,2
+abrir

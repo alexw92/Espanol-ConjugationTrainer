@@ -2,6 +2,7 @@ package dict;
 
 import java.util.ArrayList;
 
+
 public class Verb {
 
 	// Constant
@@ -10,6 +11,7 @@ public class Verb {
 	public static final int PARTICIPLE = 2;
 	public static final int FUTURO = 3;
 	public static final int IMPERFECTO = 4;
+	public static final int MEANING = 100;
 
 	private String inf;
 	private ArrayList<String> indefinido;
@@ -18,6 +20,7 @@ public class Verb {
 	private ArrayList<String> imperfecto;
 	private String participle;
 	private String gerund;
+	private ArrayList<String> meanings;
 
 	public Verb(String infinitive) {
 		this.inf = infinitive;
@@ -25,6 +28,7 @@ public class Verb {
 		present = new ArrayList<String>();
 		futuro = new ArrayList<String>();
 		imperfecto = new ArrayList<String>();
+		meanings = new ArrayList<String>();
 	}
 
 	public String getInfinitve() {
@@ -40,6 +44,7 @@ public class Verb {
 	}
 
 	public String getVerbForm(int person, boolean plural, int tempus) {
+		//TODO Debug
 		if (plural)
 			person += 3;
 		if (tempus == PRESENT)
@@ -128,6 +133,12 @@ public class Verb {
 			result += "Participio: " + getParticiple() + "\n";
 		if (getGerund() != null)
 			result += "Gerundio: " + getGerund() + "\n";
+		if (!getMeanings().isEmpty()){
+			result+="Significados:\n";
+			for(String m : getMeanings()){
+				result+=m+"\n";
+			}
+		}
 		return result;
 	}
 
@@ -141,6 +152,19 @@ public class Verb {
 		Verb v = (Verb) o;
 		return this.getInfinitve().equals(v.getInfinitve());
 	}
+	
+	public String getMeaningsString(){
+		String res = "";
+		if(getMeanings().size()==0)
+			return null;
+		for(int i=0;i<getMeanings().size();i++){
+			if(i!=(getMeanings().size()-1))
+				res+=getMeanings().get(i)+", ";
+			else
+				res+=getMeanings().get(i);
+		}
+		return res;
+	}
 
 	public void setGerund(String gerund) {
 		this.gerund = gerund;
@@ -148,6 +172,19 @@ public class Verb {
 
 	public String getGerund() {
 		return gerund;
+	}
+
+	public ArrayList<String> getMeanings() {
+		return meanings;
+	}
+
+	public void addMeaning(String meaning) {
+		if(!meanings.contains(meaning))
+			this.meanings.add(meaning);
+	}
+	
+	public void removeMeaning(String meaning){
+		meanings.remove(meaning);
 	}
 
 }

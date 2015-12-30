@@ -16,13 +16,13 @@ public class FrequentErrorState implements State {
 	private Random ran;
 
 	public FrequentErrorState(Dictionary dict) {
-		this.box = ConjugationTrainer.currentLearnBox;
 		this.dict = dict;
 		this.ran = new Random();
 	}
 
 	@Override
 	public void execute(BufferedReader in, BufferedWriter out) throws IOException {
+		this.box = ConjugationTrainer.currentLearnBox;
 		out.write("Welche Zeit wollen Sie lernen?(Zahl eingeben)");
 		out.newLine();
 		out.flush();
@@ -38,6 +38,7 @@ public class FrequentErrorState implements State {
 		int zeit = -1;
 		if (tenseNumber.equals("q")) {
 			ConjugationTrainer.changeState(ConjugationTrainer.mainMenuState);
+			return;
 		} else {
 			try {
 				zeit = Integer.parseInt(tenseNumber);

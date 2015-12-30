@@ -14,6 +14,7 @@ import dict.Dictionary;
 import dict.LearnBox;
 import dict.Verb;
 import io.CSVImporter;
+import io.MyCSVImporter;
 
 public class ConjugationTrainer {
 
@@ -29,6 +30,12 @@ public class ConjugationTrainer {
 	public static LearnBox currentLearnBox = null;
 	public static LearnAllTensesState learnAllTensesState;
 	public static FrequentErrorState frequentState;
+	public static AddMeaningState addMeaningState;
+	public static ShowMeaningsState showMeaningsState;
+	public static SaveDictState saveDict;
+	
+	public static final String testUrl = "testCSV.csv";
+	public static final String realUrl = "spanisch verben.csv";
 	
 	public ConjugationTrainer(Dictionary dict) {
 		init = new LearnAllState(dict);
@@ -40,6 +47,9 @@ public class ConjugationTrainer {
 		learnAllTensesState = new LearnAllTensesState(dict);
 		searchWordState = new SearchWordState(dict);
 		frequentState = new FrequentErrorState(dict);
+		addMeaningState = new AddMeaningState(dict);
+		showMeaningsState = new ShowMeaningsState(dict);
+		saveDict = new SaveDictState(dict);
 	}
 
 	public void startProgram(InputStream in, OutputStream out) {
@@ -68,10 +78,11 @@ public class ConjugationTrainer {
 	}
 	
 	public static void main(String[] args) {
-		CSVImporter csv = new CSVImporter();
+		MyCSVImporter csv = new MyCSVImporter();
 		ArrayList<Verb> verbs = new ArrayList<Verb>();
 		try {
-			csv.loadVerbForms("spanisch verben.csv", verbs);
+			csv.loadVerbForms(testUrl, verbs);
+		//	csv.loadVerbForms(realUrl, verbs);
 	//		imp.loadVerbForms("perfekt.txt", Verb.PARTICIPLE, verbs);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

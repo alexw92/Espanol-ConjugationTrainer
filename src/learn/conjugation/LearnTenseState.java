@@ -46,7 +46,7 @@ public class LearnTenseState implements State {
 				// Lerne endlos bis exit(also q oder quit als Eingabe) kommt
 				while (!askTenseForm(in, out, zahl, ConjugationTrainer.currentLearnBox))
 					;
-				//Nach verlassen des Lernmodus, Ergebnisse speichern
+				// Nach verlassen des Lernmodus, Ergebnisse speichern
 				ConjugationTrainer.currentLearnBox.saveLearnBox(null);
 				out.write("Lernmodus verlassen. Ergebnisse wurden gespeichert.");
 				out.newLine();
@@ -86,7 +86,8 @@ public class LearnTenseState implements State {
 		int person = ran.nextInt(3) + 1;
 		// "Wie lautet die 3.Person Singular Indefinido von acabar?"
 		out.write("Wie lautet die " + person + ".Person " + ((plural) ? "Plural, " : "Singular, ")
-				+ dict.getTenses().get(tense) + " von " + v.getInfinitve() + "?\n");
+				+ dict.getTenses().get(tense) + " von " + v.getInfinitve()
+				+ ((v.getMeaningsString() != null) ? "(" + v.getMeaningsString() + ")" : "") + "?\n");
 		out.flush();
 		// Einlesen
 		String inp = in.readLine();
@@ -100,7 +101,7 @@ public class LearnTenseState implements State {
 		} else {
 			out.write("Falsch! Die korrekte Form lautet: " + correct + "!\n");
 			out.flush();
-			//Fehler in Lernbox vermerken
+			// Fehler in Lernbox vermerken
 			box.addErrorCount(v);
 		}
 		return false;

@@ -31,10 +31,13 @@ public class CSVImporter implements WordImporter {
 			String helper = "";
 			while ((line = reader.readLine()) != null) {
 				if (line != "") {
-					// Progress for "spanisch verben.csv" In first line because of continue skipping
-					if ((lineNumber % 1150) == 0){
+					// Progress for "spanisch verben.csv" In first line because
+					// of continue skipping
+					if ((lineNumber % 1150) == 0) {
 						System.out.println((lineNumber / 11500.0) * 100 + "%");
-						}
+					}
+					// true if meaning entry
+					boolean meaning = false;
 					lineNumber++;
 					String[] split = line.split(";");
 					// get infinitive
@@ -60,25 +63,44 @@ public class CSVImporter implements WordImporter {
 						temp = Verb.IMPERFECTO;
 					else if (t.equals("Pretérito"))
 						temp = Verb.INDEFINIDO;
+					// Meaning of this verb is also saved in tense column
+					else if (t.equals("Significados")) {
+						temp = Verb.MEANING;
+					}
 					// continue to next if illegal temp
 					if (temp == -1)
 						continue;
-					// Special verbs like doler only have third person forms in
-					// present
-					if (split.length < 9) {
-						verb.setVerbForm(3, temp, split[3]);
-						verb.setVerbForm(6, temp, split[4]);
-					} else
-						for (int i = 3; i < 9; i++) {
-							verb.setVerbForm(i - 2, temp, split[i]);
+					if (!meaning) {
+						// Special verbs like doler only have third person forms
+						// in
+						// present
+						if (split.length < 9) {
+							verb.setVerbForm(3, temp, split[3]);
+							verb.setVerbForm(6, temp, split[4]);
+						} else
+							for (int i = 3; i < 9; i++) {
+								verb.setVerbForm(i - 2, temp, split[i]);
+							}
+						// get gerund and past participle not from every line
+						// (every
+						// line with same infitive contais it)
+						// if ((lineNumber % 10) == 0) {
+						// if (split.length > 10) {
+						
+						//Use this code to import from "spanische verben.csv"
+						if (!helper.equals(split[0])) {
+							verb.setGerund(split[9]);
+							verb.setParticiple(split[10]);
 						}
-					// get gerund and past participle not from every line (every
-					// line with same infitive contais it)
-					// if ((lineNumber % 10) == 0) {
-					// if (split.length > 10) {
-					if (!helper.equals(split[0])) {
-						verb.setGerund(split[9]);
-						verb.setParticiple(split[10]);
+						
+					}
+					//Set meaning for verb
+					//Meaning are "," separated
+					else{
+						String[] meanings = split[3].split(",");
+						for(String m : meanings){
+							verb.addMeaning(m);
+						}						
 					}
 					// }
 					// }
