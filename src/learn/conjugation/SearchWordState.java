@@ -41,7 +41,7 @@ public class SearchWordState implements State {
 			ConjugationTrainer.changeState(ConjugationTrainer.mainMenuState);
 		}
 		else{
-			out.write(v.getInfinitve()+" wurde nicht im Wörterbuch gefunden");
+			out.write(word+" wurde nicht im Wörterbuch gefunden");
 			out.newLine();
 			out.flush();
 				
