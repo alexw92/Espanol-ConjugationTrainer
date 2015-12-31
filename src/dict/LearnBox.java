@@ -218,7 +218,8 @@ public class LearnBox {
 			res += verbs.size() + " Wörter\n";
 			for (Verb v : verbs) {
 				int f = failures.get(v);
-				res += v.getInfinitve() + ((f == 0) ? "" : ("(" + f + ")")) + "\n";
+				String m = v.getMeaningsString();
+				res += v.getInfinitve() + ((f == 0) ? "" : ("(" + f + ")")) +((m==null)?"":" - "+m)+ "\n";
 			}
 		}
 		return res;

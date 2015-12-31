@@ -56,19 +56,36 @@ public class AddMeaningState implements State {
 			}
 
 			// Add Meanings
-			out.write("Geben Sie eine Bedeutung ein(q zum Beenden):");
+			out.write("Geben Sie eine oder mehrere Bedeutungen (durch \", \" getrennt) ein(q zum Beenden):");
 			out.newLine();
 			out.flush();
 			String inp = in.readLine();
 			if (inp.equals("q")) {
 				// Do nothing, return to mother state
 			}
-			// Add Meaning
+			// Add Meaning(s)
 			else {
-				v.addMeaning(inp);
-				out.write("Bedeutung hinzugefügt. Im Hauptmenü können Sie diese Veränderung speichern:");
-				out.newLine();
-				out.flush();
+				if (inp.contains(",")) {
+					String[] split = inp.split(",");
+					int count = 0;
+					for(String m : split){
+						if(m!=""){
+							//cut space if typed
+							if(m.startsWith(" "))
+								m = m.substring(1, m.length());
+							v.addMeaning(m);
+							count++;
+						}
+					}
+					out.write(count+" Bedeutungen hinzugefügt. Im Hauptmenü können Sie diese Veränderung speichern:");
+					out.newLine();
+					out.flush();
+				} else {
+					v.addMeaning(inp);
+					out.write("Bedeutung hinzugefügt. Im Hauptmenü können Sie diese Veränderung speichern:");
+					out.newLine();
+					out.flush();
+				}
 			}
 		}
 		ConjugationTrainer.changeState(ConjugationTrainer.learnBoxState);
