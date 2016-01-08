@@ -1096,7 +1096,7 @@ conocer;Indicativo;Indefinido;conocí;conociste;conoció;conocimos;conocisteis;con
 conocer;Indicativo;Futuro;conoceré;conocerás;conocerá;conoceremos;conoceréis;conocerán
 conocer;Gerundio;conociendo
 conocer;Participio;conocido
-conocer;Significados;
+conocer;Significados;kennen,kennen lernen
 conquistar;Indicativo;Presente;conquisto;conquistas;conquista;conquistamos;conquistáis;conquistan
 conquistar;Indicativo;Imperfecto;conquistaba;conquistabas;conquistaba;conquistábamos;conquistabais;conquistaban
 conquistar;Indicativo;Indefinido;conquisté;conquistaste;conquistó;conquistamos;conquistasteis;conquistaron
@@ -2426,7 +2426,7 @@ hacer;Indicativo;Indefinido;hice;hiciste;hizo;hicimos;hicisteis;hicieron
 hacer;Indicativo;Futuro;haré;harás;hará;haremos;haréis;harán
 hacer;Gerundio;haciendo
 hacer;Participio;hecho
-hacer;Significados;
+hacer;Significados;machen
 hallar;Indicativo;Presente;hallo;hallas;halla;hallamos;halláis;hallan
 hallar;Indicativo;Imperfecto;hallaba;hallabas;hallaba;hallábamos;hallabais;hallaban
 hallar;Indicativo;Indefinido;hallé;hallaste;halló;hallamos;hallasteis;hallaron
@@ -3861,7 +3861,7 @@ saber;Indicativo;Indefinido;supe;supiste;supo;supimos;supisteis;supieron
 saber;Indicativo;Futuro;sabré;sabrás;sabrá;sabremos;sabréis;sabrán
 saber;Gerundio;sabiendo
 saber;Participio;sabido
-saber;Significados;wissen,etwas können
+saber;Significados;wissen,etwas können,ir
 sacar;Indicativo;Presente;saco;sacas;saca;sacamos;sacáis;sacan
 sacar;Indicativo;Imperfecto;sacaba;sacabas;sacaba;sacábamos;sacabais;sacaban
 sacar;Indicativo;Indefinido;saqué;sacaste;sacó;sacamos;sacasteis;sacaron
@@ -4162,7 +4162,7 @@ terminar;Indicativo;Indefinido;terminé;terminaste;terminó;terminamos;terminastei
 terminar;Indicativo;Futuro;terminaré;terminarás;terminará;terminaremos;terminaréis;terminarán
 terminar;Gerundio;terminando
 terminar;Participio;terminado
-terminar;Significados;
+terminar;Significados;beenden
 teñir;Indicativo;Presente;tiño;tiñes;tiñe;teñimos;teñís;tiñen
 teñir;Indicativo;Imperfecto;teñía;teñías;teñía;teñíamos;teñíais;teñían
 teñir;Indicativo;Indefinido;teñí;teñiste;tiñó;teñimos;teñisteis;tiñeron
@@ -4386,7 +4386,7 @@ vivir;Indicativo;Indefinido;viví;viviste;vivió;vivimos;vivisteis;vivieron
 vivir;Indicativo;Futuro;viviré;vivirás;vivirá;viviremos;viviréis;vivirán
 vivir;Gerundio;viviendo
 vivir;Participio;vivido
-vivir;Significados;
+vivir;Significados;leben,wohnen
 volar;Indicativo;Presente;vuelo;vuelas;vuela;volamos;voláis;vuelan
 volar;Indicativo;Imperfecto;volaba;volabas;volaba;volábamos;volabais;volaban
 volar;Indicativo;Indefinido;volé;volaste;voló;volamos;volasteis;volaron
