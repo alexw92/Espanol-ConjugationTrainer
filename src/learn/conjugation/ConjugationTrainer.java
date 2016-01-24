@@ -83,9 +83,8 @@ public class ConjugationTrainer {
 		try {
 			csv.loadVerbForms(testUrl, verbs);
 		//	csv.loadVerbForms(realUrl, verbs);
-	//		imp.loadVerbForms("perfekt.txt", Verb.PARTICIPLE, verbs);
+	    //	imp.loadVerbForms("perfekt.txt", Verb.PARTICIPLE, verbs);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		Dictionary dict = new Dictionary();

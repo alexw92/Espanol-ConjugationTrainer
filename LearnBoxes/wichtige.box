@@ -1,38 +1,13 @@
 tener,3
-<<<<<<< HEAD
-estar,5
-poner,1
-=======
-estar,4
+estar,6
 poner,2
->>>>>>> a7ce8f9048a11ba505ee28e9e563dde73486a615
 decir,6
 hacer,1
 querer,4
 saber,4
 venir,5
-<<<<<<< HEAD
-traer,1
-dar,8
-preferir,8
-pedir,6
-construir,6
-conducir,5
-dormir,3
-ser,3
-ir,3
-morir,5
-jugar,2
-caer,12
-oír,11
-leer,4
-buscar,2
-conocer,4
-vivir,1
-terminar,3
-=======
-traer,2
-dar,9
+traer,4
+dar,10
 preferir,8
 pedir,7
 construir,9
@@ -41,15 +16,14 @@ dormir,3
 ser,2
 ir,2
 morir,5
-jugar,2
-caer,15
-oír,9
+jugar,3
+caer,16
+oír,10
 leer,5
 buscar,5
 conocer,4
-vivir,1
+vivir,2
 terminar,2
->>>>>>> a7ce8f9048a11ba505ee28e9e563dde73486a615
 andar,2
 perder,4
 abrir,2
