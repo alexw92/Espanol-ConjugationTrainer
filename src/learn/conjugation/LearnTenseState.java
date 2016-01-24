@@ -20,7 +20,8 @@ public class LearnTenseState implements State {
 	}
 
 	@Override
-	public void execute(BufferedReader in, BufferedWriter out) throws IOException {
+	public void execute(BufferedReader in, BufferedWriter out)
+			throws IOException {
 		out.write("Welche Zeit wollen Sie lernen?(Zahl eingeben)");
 		out.newLine();
 		out.flush();
@@ -43,8 +44,12 @@ public class LearnTenseState implements State {
 				fail = true;
 			}
 			if (!fail && zahl >= 0 && zahl < dict.getTenses().size()) {
+				out.write("Welche Zeit wollen Sie lernen?(Zahl eingeben)");
+				out.newLine();
+				out.flush();
 				// Lerne endlos bis exit(also q oder quit als Eingabe) kommt
-				while (!askTenseForm(in, out, zahl, ConjugationTrainer.currentLearnBox))
+				while (!askTenseFormAllForms(in, out, zahl,
+						ConjugationTrainer.currentLearnBox))
 					;
 				// Nach verlassen des Lernmodus, Ergebnisse speichern
 				ConjugationTrainer.currentLearnBox.saveLearnBox(null);
@@ -65,7 +70,8 @@ public class LearnTenseState implements State {
 	}
 
 	private Verb getRandomVerb() {
-		int i = ran.nextInt(ConjugationTrainer.currentLearnBox.getVerbs().size());
+		int i = ran.nextInt(ConjugationTrainer.currentLearnBox.getVerbs()
+				.size());
 		return ConjugationTrainer.currentLearnBox.getVerbs().get(i);
 	}
 
@@ -77,7 +83,8 @@ public class LearnTenseState implements State {
 	 * @return true if the user exits this program
 	 * @throws IOException
 	 */
-	private boolean askTenseForm(BufferedReader in, BufferedWriter out, int tense, LearnBox box) throws IOException {
+	private boolean askTenseForm(BufferedReader in, BufferedWriter out,
+			int tense, LearnBox box) throws IOException {
 		// Get random verb
 		Verb v = getRandomVerb();
 		// Get random sing/plural
@@ -85,9 +92,15 @@ public class LearnTenseState implements State {
 		// Get random person
 		int person = ran.nextInt(3) + 1;
 		// "Wie lautet die 3.Person Singular Indefinido von acabar?"
-		out.write("Wie lautet die " + person + ".Person " + ((plural) ? "Plural, " : "Singular, ")
-				+ dict.getTenses().get(tense) + " von " + v.getInfinitve()
-				+ ((v.getMeaningsString() != null) ? "(" + v.getMeaningsString() + ")" : "") + "?\n");
+		out.write("Wie lautet die "
+				+ person
+				+ ".Person "
+				+ ((plural) ? "Plural, " : "Singular, ")
+				+ dict.getTenses().get(tense)
+				+ " von "
+				+ v.getInfinitve()
+				+ ((v.getMeaningsString() != null) ? "("
+						+ v.getMeaningsString() + ")" : "") + "?\n");
 		out.flush();
 		// Einlesen
 		String inp = in.readLine();
@@ -103,6 +116,69 @@ public class LearnTenseState implements State {
 			out.flush();
 			// Fehler in Lernbox vermerken
 			box.addErrorCount(v);
+		}
+		return false;
+	}
+
+	/**
+	 * Difference to askTenseForm(): All verb forms of the specific tense need
+	 * to be entered
+	 * 
+	 * @param in
+	 * @param out
+	 * @param tense
+	 * @param box
+	 * @return
+	 * @throws IOException
+	 */
+	private boolean askTenseFormAllForms(BufferedReader in, BufferedWriter out,
+			int tense, LearnBox box) throws IOException {
+		// Get random verb
+		Verb v = getRandomVerb();
+		int person = 1;
+		boolean plural = false;
+		for (int i = 1; i < 7; i++) {
+
+			if (i > 3) {
+				person = i - 3;
+				plural = true;
+
+			} else {
+				person = i;
+				plural = false;
+			}
+			out.write(person
+					+ ".Person "
+					+ ((plural) ? "Plural, " : "Singular, ")
+					+ dict.getTenses().get(tense)
+					+ " von "
+					+ v.getInfinitve()
+					+ ((v.getMeaningsString() != null) ? "("
+							+ v.getMeaningsString() + ")" : "") + ":");
+			out.flush();
+			// Einlesen
+			String inp = in.readLine();
+			// Ergebnis auswerten
+			String correct = v.getVerbForm(person, plural, tense);
+			if (inp.equals(correct))
+				;
+			else if (inp.equals("q") || inp.equals("quit")) {
+				//exit learn mode
+				return true;
+			}
+			else if(inp.equals("n")){
+				//jump to next verb
+				return false;
+			}
+
+			else {
+				out.write("Falsch! Korrekte Form: " + correct
+						+ "!");
+				out.newLine();
+				out.flush();
+				// Fehler in Lernbox vermerken
+				box.addErrorCount(v);
+			}
 		}
 		return false;
 	}
