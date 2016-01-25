@@ -1166,7 +1166,7 @@ contar;Indicativo;Indefinido;conté;contaste;contó;contamos;contasteis;contaron
 contar;Indicativo;Futuro;contaré;contarás;contará;contaremos;contaréis;contarán
 contar;Gerundio;contando
 contar;Participio;contado
-contar;Significados;
+contar;Significados;erzählen,zählen
 contener;Indicativo;Presente;contengo;contienes;contiene;contenemos;contenéis;contienen
 contener;Indicativo;Imperfecto;contenía;contenías;contenía;conteníamos;conteníais;contenían
 contener;Indicativo;Indefinido;contuve;contuviste;contuvo;contuvimos;contuvisteis;contuvieron
@@ -3385,7 +3385,7 @@ preguntar;Indicativo;Indefinido;pregunté;preguntaste;preguntó;preguntamos;pregun
 preguntar;Indicativo;Futuro;preguntaré;preguntarás;preguntará;preguntaremos;preguntaréis;preguntarán
 preguntar;Gerundio;preguntando
 preguntar;Participio;preguntado
-preguntar;Significados;
+preguntar;Significados;fragen
 preguntarse;Indicativo;Presente;me pregunto;te preguntas;se pregunta;nos preguntamos;os preguntáis;se preguntan
 preguntarse;Indicativo;Imperfecto;me preguntaba;te preguntabas;se preguntaba;nos preguntábamos;os preguntabais;se preguntaban
 preguntarse;Indicativo;Indefinido;me pregunté;te preguntaste;se preguntó;nos preguntamos;os preguntasteis;se preguntaron
