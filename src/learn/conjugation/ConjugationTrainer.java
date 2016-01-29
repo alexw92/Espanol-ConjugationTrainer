@@ -33,12 +33,15 @@ public class ConjugationTrainer {
 	public static AddMeaningState addMeaningState;
 	public static ShowMeaningsState showMeaningsState;
 	public static SaveDictState saveDict;
+	public static LearnMeaningsState learnMeaningsState;
 	
 	public static final String testUrl = "testCSV.csv";
 	public static final String realUrl = "spanisch verben.csv";
+
 	
 	public ConjugationTrainer(Dictionary dict) {
 		init = new LearnAllState(dict);
+		learnMeaningsState = new LearnMeaningsState(dict);
 		mainMenuState = new MainMenuState();
 		createBoxState = new CreateBoxState(dict);
 		loadBoxState = new LoadBoxState(dict);

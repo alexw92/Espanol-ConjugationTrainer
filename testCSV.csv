@@ -585,7 +585,7 @@ bajar;Indicativo;Indefinido;bajé;bajaste;bajó;bajamos;bajasteis;bajaron
 bajar;Indicativo;Futuro;bajaré;bajarás;bajará;bajaremos;bajaréis;bajarán
 bajar;Gerundio;bajando
 bajar;Participio;bajado
-bajar;Significados;
+bajar;Significados;aussteigen,hinabsteigen,heruntergehen
 barrer;Indicativo;Presente;barro;barres;barre;barremos;barréis;barren
 barrer;Indicativo;Imperfecto;barría;barrías;barría;barríamos;barríais;barrían
 barrer;Indicativo;Indefinido;barrí;barriste;barrió;barrimos;barristeis;barrieron
@@ -949,7 +949,7 @@ coger;Indicativo;Indefinido;cogí;cogiste;cogió;cogimos;cogisteis;cogieron
 coger;Indicativo;Futuro;cogeré;cogerás;cogerá;cogeremos;cogeréis;cogerán
 coger;Gerundio;cogiendo
 coger;Participio;cogido
-coger;Significados;
+coger;Significados;nehmen(v.A. Bus,Auto etc.)
 colgar;Indicativo;Presente;cuelgo;cuelgas;cuelga;colgamos;colgáis;cuelgan
 colgar;Indicativo;Imperfecto;colgaba;colgabas;colgaba;colgábamos;colgabais;colgaban
 colgar;Indicativo;Indefinido;colgué;colgaste;colgó;colgamos;colgasteis;colgaron
@@ -991,7 +991,7 @@ comer;Indicativo;Indefinido;comí;comiste;comió;comimos;comisteis;comieron
 comer;Indicativo;Futuro;comeré;comerás;comerá;comeremos;comeréis;comerán
 comer;Gerundio;comiendo
 comer;Participio;comido
-comer;Significados;
+comer;Significados;essen
 compartir;Indicativo;Presente;comparto;compartes;comparte;compartimos;compartís;comparten
 compartir;Indicativo;Imperfecto;compartía;compartías;compartía;compartíamos;compartíais;compartían
 compartir;Indicativo;Indefinido;compartí;compartiste;compartió;compartimos;compartisteis;compartieron
@@ -1019,7 +1019,7 @@ comprar;Indicativo;Indefinido;compré;compraste;compró;compramos;comprasteis;comp
 comprar;Indicativo;Futuro;compraré;comprarás;comprará;compraremos;compraréis;comprarán
 comprar;Gerundio;comprando
 comprar;Participio;comprado
-comprar;Significados;
+comprar;Significados;kaufen
 comprender;Indicativo;Presente;comprendo;comprendes;comprende;comprendemos;comprendéis;comprenden
 comprender;Indicativo;Imperfecto;comprendía;comprendías;comprendía;comprendíamos;comprendíais;comprendían
 comprender;Indicativo;Indefinido;comprendí;comprendiste;comprendió;comprendimos;comprendisteis;comprendieron
@@ -1390,7 +1390,7 @@ deber;Indicativo;Indefinido;debí;debiste;debió;debimos;debisteis;debieron
 deber;Indicativo;Futuro;deberé;deberás;deberá;deberemos;deberéis;deberán
 deber;Gerundio;debiendo
 deber;Participio;debido
-deber;Significados;
+deber;Significados;müssen
 decidir;Indicativo;Presente;decido;decides;decide;decidimos;decidís;deciden
 decidir;Indicativo;Imperfecto;decidía;decidías;decidía;decidíamos;decidíais;decidían
 decidir;Indicativo;Indefinido;decidí;decidiste;decidió;decidimos;decidisteis;decidieron
@@ -1845,7 +1845,7 @@ empezar;Indicativo;Indefinido;empecé;empezaste;empezó;empezamos;empezasteis;empe
 empezar;Indicativo;Futuro;empezaré;empezarás;empezará;empezaremos;empezaréis;empezarán
 empezar;Gerundio;empezando
 empezar;Participio;empezado
-empezar;Significados;
+empezar;Significados;beginnen,anfangen
 emplear;Indicativo;Presente;empleo;empleas;emplea;empleamos;empleáis;emplean
 emplear;Indicativo;Imperfecto;empleaba;empleabas;empleaba;empleábamos;empleabais;empleaban
 emplear;Indicativo;Indefinido;empleé;empleaste;empleó;empleamos;empleasteis;emplearon
@@ -2111,7 +2111,7 @@ escuchar;Indicativo;Indefinido;escuché;escuchaste;escuchó;escuchamos;escuchastei
 escuchar;Indicativo;Futuro;escucharé;escucharás;escuchará;escucharemos;escucharéis;escucharán
 escuchar;Gerundio;escuchando
 escuchar;Participio;escuchado
-escuchar;Significados;
+escuchar;Significados;zuhören
 esperar;Indicativo;Presente;espero;esperas;espera;esperamos;esperáis;esperan
 esperar;Indicativo;Imperfecto;esperaba;esperabas;esperaba;esperábamos;esperabais;esperaban
 esperar;Indicativo;Indefinido;esperé;esperaste;esperó;esperamos;esperasteis;esperaron
@@ -2650,7 +2650,7 @@ irse;Indicativo;Indefinido;me fui;te fuiste;se fue;nos fuimos;os fuisteis;se fue
 irse;Indicativo;Futuro;me iré;te irás;se irá;nos iremos;os iréis;se irán
 irse;Gerundio;yéndose
 irse;Participio;ido
-irse;Significados;weggehen,fortgehen,davongehen
+irse;Significados;weggehen,fortgehen,davongehen,wegfahren
 jactarse;Indicativo;Presente;me jacto;te jactas;se jacta;nos jactamos;os jactáis;se jactan
 jactarse;Indicativo;Imperfecto;me jactaba;te jactabas;se jactaba;nos jactábamos;os jactabais;se jactaban
 jactarse;Indicativo;Indefinido;me jacté;te jactaste;se jactó;nos jactamos;os jactasteis;se jactaron
@@ -2783,7 +2783,7 @@ llegar;Indicativo;Indefinido;llegué;llegaste;llegó;llegamos;llegasteis;llegaron
 llegar;Indicativo;Futuro;llegaré;llegarás;llegará;llegaremos;llegaréis;llegarán
 llegar;Gerundio;llegando
 llegar;Participio;llegado
-llegar;Significados;
+llegar;Significados;kommen,eintreffen
 llenar;Indicativo;Presente;lleno;llenas;llena;llenamos;llenáis;llenan
 llenar;Indicativo;Imperfecto;llenaba;llenabas;llenaba;llenábamos;llenabais;llenaban
 llenar;Indicativo;Indefinido;llené;llenaste;llenó;llenamos;llenasteis;llenaron
@@ -2797,7 +2797,7 @@ llevar;Indicativo;Indefinido;llevé;llevaste;llevó;llevamos;llevasteis;llevaron
 llevar;Indicativo;Futuro;llevaré;llevarás;llevará;llevaremos;llevaréis;llevarán
 llevar;Gerundio;llevando
 llevar;Participio;llevado
-llevar;Significados;
+llevar;Significados;mitbringen,anhaben(Kleidung),tragen
 llorar;Indicativo;Presente;lloro;lloras;llora;lloramos;lloráis;lloran
 llorar;Indicativo;Imperfecto;lloraba;llorabas;lloraba;llorábamos;llorabais;lloraban
 llorar;Indicativo;Indefinido;lloré;lloraste;lloró;lloramos;llorasteis;lloraron
@@ -3119,7 +3119,7 @@ olvidar;Indicativo;Indefinido;olvidé;olvidaste;olvidó;olvidamos;olvidasteis;olvi
 olvidar;Indicativo;Futuro;olvidaré;olvidarás;olvidará;olvidaremos;olvidaréis;olvidarán
 olvidar;Gerundio;olvidando
 olvidar;Participio;olvidado
-olvidar;Significados;
+olvidar;Significados;jmd/etw. vergessen
 olvidarse;Indicativo;Presente;me olvido;te olvidas;se olvida;nos olvidamos;os olvidáis;se olvidan
 olvidarse;Indicativo;Imperfecto;me olvidaba;te olvidabas;se olvidaba;nos olvidábamos;os olvidabais;se olvidaban
 olvidarse;Indicativo;Indefinido;me olvidé;te olvidaste;se olvidó;nos olvidamos;os olvidasteis;se olvidaron
@@ -3357,7 +3357,7 @@ ponerse;Indicativo;Indefinido;me puse;te pusiste;se puso;nos pusimos;os pusistei
 ponerse;Indicativo;Futuro;me pondré;te pondrás;se pondrá;nos pondremos;os pondréis;se pondrán
 ponerse;Gerundio;poniéndose
 ponerse;Participio;puesto
-ponerse;Significados;
+ponerse;Significados;etw. anziehen,werden
 practicar;Indicativo;Presente;practico;practicas;practica;practicamos;practicáis;practican
 practicar;Indicativo;Imperfecto;practicaba;practicabas;practicaba;practicábamos;practicabais;practicaban
 practicar;Indicativo;Indefinido;practiqué;practicaste;practicó;practicamos;practicasteis;practicaron
@@ -3602,7 +3602,7 @@ recoger;Indicativo;Indefinido;recogí;recogiste;recogió;recogimos;recogisteis;rec
 recoger;Indicativo;Futuro;recogeré;recogerás;recogerá;recogeremos;recogeréis;recogerán
 recoger;Gerundio;recogiendo
 recoger;Participio;recogido
-recoger;Significados;
+recoger;Significados;einsammeln(zB Geld),jmd/etw. abholen
 recomendar;Indicativo;Presente;recomiendo;recomiendas;recomienda;recomendamos;recomendáis;recomiendan
 recomendar;Indicativo;Imperfecto;recomendaba;recomendabas;recomendaba;recomendábamos;recomendabais;recomendaban
 recomendar;Indicativo;Indefinido;recomendé;recomendaste;recomendó;recomendamos;recomendasteis;recomendaron
@@ -3889,7 +3889,7 @@ salir;Indicativo;Indefinido;salí;saliste;salió;salimos;salisteis;salieron
 salir;Indicativo;Futuro;saldré;saldrás;saldrá;saldremos;saldréis;saldrán
 salir;Gerundio;saliendo
 salir;Participio;salido
-salir;Significados;
+salir;Significados;abfahren,(con alguien) ausgehen,(de) aus etw. herausfahren/gehen
 saltar;Indicativo;Presente;salto;saltas;salta;saltamos;saltáis;saltan
 saltar;Indicativo;Imperfecto;saltaba;saltabas;saltaba;saltábamos;saltabais;saltaban
 saltar;Indicativo;Indefinido;salté;saltaste;saltó;saltamos;saltasteis;saltaron
@@ -3973,7 +3973,7 @@ sentirse;Indicativo;Indefinido;me sentí;te sentiste;se sintió;nos sentimos;os se
 sentirse;Indicativo;Futuro;me sentiré;te sentirás;se sentirá;nos sentiremos;os sentiréis;se sentirán
 sentirse;Gerundio;sintiéndose
 sentirse;Participio;sentido
-sentirse;Significados;
+sentirse;Significados;sich (gut/schlecht,...) fühlen
 ser;Indicativo;Presente;soy;eres;es;somos;sois;son
 ser;Indicativo;Imperfecto;era;eras;era;éramos;erais;eran
 ser;Indicativo;Indefinido;fui;fuiste;fue;fuimos;fuisteis;fueron
@@ -4071,7 +4071,7 @@ subir;Indicativo;Indefinido;subí;subiste;subió;subimos;subisteis;subieron
 subir;Indicativo;Futuro;subiré;subirás;subirá;subiremos;subiréis;subirán
 subir;Gerundio;subiendo
 subir;Participio;subido
-subir;Significados;
+subir;Significados;einsteigen(a un vehiculo),hinaufsteigen,hochgehen,ansteigen(Preise etc.)
 suceder;Indicativo;Presente;sucedo;sucedes;sucede;sucedemos;sucedéis;suceden
 suceder;Indicativo;Imperfecto;sucedía;sucedías;sucedía;sucedíamos;sucedíais;sucedían
 suceder;Indicativo;Indefinido;sucedí;sucediste;sucedió;sucedimos;sucedisteis;sucedieron
@@ -4190,7 +4190,7 @@ tomar;Indicativo;Indefinido;tomé;tomaste;tomó;tomamos;tomasteis;tomaron
 tomar;Indicativo;Futuro;tomaré;tomarás;tomará;tomaremos;tomaréis;tomarán
 tomar;Gerundio;tomando
 tomar;Participio;tomado
-tomar;Significados;
+tomar;Significados;essen,trinken,zu sich nehmen
 torcer;Indicativo;Presente;tuerzo;tuerces;tuerce;torcemos;torcéis;tuercen
 torcer;Indicativo;Imperfecto;torcía;torcías;torcía;torcíamos;torcíais;torcían
 torcer;Indicativo;Indefinido;torcí;torciste;torció;torcimos;torcisteis;torcieron
@@ -4323,7 +4323,7 @@ vender;Indicativo;Indefinido;vendí;vendiste;vendió;vendimos;vendisteis;vendieron
 vender;Indicativo;Futuro;venderé;venderás;venderá;venderemos;venderéis;venderán
 vender;Gerundio;vendiendo
 vender;Participio;vendido
-vender;Significados;
+vender;Significados;verkaufen
 venir;Indicativo;Presente;vengo;vienes;viene;venimos;venís;vienen
 venir;Indicativo;Imperfecto;venía;venías;venía;veníamos;veníais;venían
 venir;Indicativo;Indefinido;vine;viniste;vino;vinimos;vinisteis;vinieron

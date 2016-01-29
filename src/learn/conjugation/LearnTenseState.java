@@ -13,10 +13,12 @@ public class LearnTenseState implements State {
 
 	private Dictionary dict;
 	private Random ran;
+	private int nextVerb;
 
 	public LearnTenseState(Dictionary dict) {
 		this.dict = dict;
 		ran = new Random();
+		this.nextVerb = -1;
 	}
 
 	@Override
@@ -73,6 +75,10 @@ public class LearnTenseState implements State {
 		int i = ran.nextInt(ConjugationTrainer.currentLearnBox.getVerbs()
 				.size());
 		return ConjugationTrainer.currentLearnBox.getVerbs().get(i);
+	}
+	
+	private Verb getNextVerb() {
+		return ConjugationTrainer.currentLearnBox.getVerbs().get((++nextVerb)%ConjugationTrainer.currentLearnBox.getVerbs().size());
 	}
 
 	/**
@@ -134,7 +140,9 @@ public class LearnTenseState implements State {
 	private boolean askTenseFormAllForms(BufferedReader in, BufferedWriter out,
 			int tense, LearnBox box) throws IOException {
 		// Get random verb
-		Verb v = getRandomVerb();
+		//Verb v = getRandomVerb();
+		//Get next verb
+		Verb v = getNextVerb();
 		int person = 1;
 		boolean plural = false;
 		for (int i = 1; i < 7; i++) {
