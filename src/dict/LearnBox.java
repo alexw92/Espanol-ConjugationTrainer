@@ -66,7 +66,8 @@ public class LearnBox {
 	}
 
 	public Verb getFrequentWrongVerb() {
-		
+		if(helper.size()==0)
+			return null;
 		int i = ran.nextInt(helper.size());
 		return helper.get(i);
 	}
@@ -223,6 +224,14 @@ public class LearnBox {
 			}
 		}
 		return res;
+	}
+
+	public void decreaseErrorCount(Verb v) {
+		if (!verbs.contains(v))
+			System.out.println("Verb \"" + v.getInfinitve() + "\" is not in Learnbox \"" + name + "\".");
+		int failues = failures.get(v);
+		if(failues>0)
+			failures.put(v, failues - 1);	
 	}
 
 }

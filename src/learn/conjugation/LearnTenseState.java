@@ -14,11 +14,16 @@ public class LearnTenseState implements State {
 	private Dictionary dict;
 	private Random ran;
 	private int nextVerb;
+	// Number of verbs correct in a row in this session
+	private int sessionHighscore;
+	private int currentHighscore;
+	private static int sessionHighscoreConstant = 2;
 
 	public LearnTenseState(Dictionary dict) {
 		this.dict = dict;
 		ran = new Random();
 		this.nextVerb = -1;
+		sessionHighscore = sessionHighscoreConstant;
 	}
 
 	@Override
@@ -76,9 +81,11 @@ public class LearnTenseState implements State {
 				.size());
 		return ConjugationTrainer.currentLearnBox.getVerbs().get(i);
 	}
-	
+
 	private Verb getNextVerb() {
-		return ConjugationTrainer.currentLearnBox.getVerbs().get((++nextVerb)%ConjugationTrainer.currentLearnBox.getVerbs().size());
+		return ConjugationTrainer.currentLearnBox.getVerbs().get(
+				(++nextVerb)
+						% ConjugationTrainer.currentLearnBox.getVerbs().size());
 	}
 
 	/**
@@ -140,11 +147,12 @@ public class LearnTenseState implements State {
 	private boolean askTenseFormAllForms(BufferedReader in, BufferedWriter out,
 			int tense, LearnBox box) throws IOException {
 		// Get random verb
-		//Verb v = getRandomVerb();
-		//Get next verb
+		// Verb v = getRandomVerb();
+		// Get next verb
 		Verb v = getNextVerb();
 		int person = 1;
 		boolean plural = false;
+		boolean allFormsCorrect = true;
 		for (int i = 1; i < 7; i++) {
 
 			if (i > 3) {
@@ -168,26 +176,40 @@ public class LearnTenseState implements State {
 			String inp = in.readLine();
 			// Ergebnis auswerten
 			String correct = v.getVerbForm(person, plural, tense);
-			if (inp.equals(correct))
-				;
-			else if (inp.equals("q") || inp.equals("quit")) {
-				//exit learn mode
-				return true;
+			if (inp.equals(correct)) {
+
 			}
-			else if(inp.equals("n")){
-				//jump to next verb
+
+			else if (inp.equals("q") || inp.equals("quit")) {
+				// exit learn mode
+				return true;
+			} else if (inp.equals("n")) {
+				// jump to next verb
 				return false;
 			}
 
 			else {
-				out.write("Falsch! Korrekte Form: " + correct
-						+ "!");
+				out.write("Falsch! Korrekte Form: " + correct + "!");
 				out.newLine();
 				out.flush();
+				allFormsCorrect = false;
 				// Fehler in Lernbox vermerken
 				box.addErrorCount(v);
 			}
 		}
+		if (allFormsCorrect) {
+			box.decreaseErrorCount(v);
+			currentHighscore++;
+			if (sessionHighscore < currentHighscore) {
+				sessionHighscore = currentHighscore;
+				out.write("Neuer Session-Highscore! Schon " + sessionHighscore
+						+ " Verben hintereinander richtig!");
+				out.newLine();
+				out.flush();
+			}
+		} else
+			currentHighscore = 0;
+
 		return false;
 	}
 

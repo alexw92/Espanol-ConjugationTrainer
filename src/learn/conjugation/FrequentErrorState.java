@@ -14,6 +14,8 @@ public class FrequentErrorState implements State {
 	private LearnBox box;
 	private Dictionary dict;
 	private Random ran;
+	private int currentHighscore = 0;
+	private int sessionHighscore = 0;
 
 	public FrequentErrorState(Dictionary dict) {
 		this.dict = dict;
@@ -47,7 +49,7 @@ public class FrequentErrorState implements State {
 			}
 			if (!failNumber && zeit >= 0 && zeit < dict.getTenses().size()) {
 				// Lerne endlos bis exit(also q oder quit als Eingabe) kommt
-				while (!askTenseForm(in, out, zeit, ConjugationTrainer.currentLearnBox))
+				while (!askTenseFormAllForms(in, out, zeit, ConjugationTrainer.currentLearnBox))
 					;
 				// Nach verlassen des Lernmodus, Ergebnisse speichern
 				ConjugationTrainer.currentLearnBox.saveLearnBox(null);
@@ -87,6 +89,13 @@ public class FrequentErrorState implements State {
 	private boolean askTenseForm(BufferedReader in, BufferedWriter out, int tense, LearnBox box) throws IOException {
 		// Get random verb
 		Verb v = box.getFrequentWrongVerb();
+		
+		if(v==null){
+			out.write("Keine häufig falschen Wörter mehr in der Liste!");
+			out.newLine();
+			out.flush();
+			return true;
+		}
 		// Get random sing/plural
 		boolean plural = ran.nextBoolean();
 		// Get random person
@@ -108,9 +117,104 @@ public class FrequentErrorState implements State {
 			out.write("Falsch! Die korrekte Form lautet: " + correct + "!\n");
 			out.flush();
 			// Fehler in Lernbox vermerken
-			box.addErrorCount(v);
+		    //	box.addErrorCount(v);
 		}
 		return false;
 	}
+	
+
+	/**
+	 * Difference to askTenseForm(): All verb forms of the specific tense need
+	 * to be entered
+	 * 
+	 * @param in
+	 * @param out
+	 * @param tense
+	 * @param box
+	 * @return
+	 * @throws IOException
+	 */
+	private boolean askTenseFormAllForms(BufferedReader in, BufferedWriter out,
+			int tense, LearnBox box) throws IOException {
+		// Get random verb
+		// Verb v = getRandomVerb();
+		// Get next verb
+		// Get random verb
+		Verb v = box.getFrequentWrongVerb();
+		
+		if(v==null){
+			out.write("Keine häufig falschen Wörter mehr in der Liste!");
+			out.newLine();
+			out.flush();
+			return true;
+		}
+		
+		int person = 1;
+		boolean plural = false;
+		boolean allFormsCorrect = true;
+		for (int i = 1; i < 7; i++) {
+
+			if (i > 3) {
+				person = i - 3;
+				plural = true;
+
+			} else {
+				person = i;
+				plural = false;
+			}
+			out.write(person
+					+ ".Person "
+					+ ((plural) ? "Plural, " : "Singular, ")
+					+ dict.getTenses().get(tense)
+					+ " von "
+					+ v.getInfinitve()
+					+ ((v.getMeaningsString() != null) ? "("
+							+ v.getMeaningsString() + ")" : "") + ":");
+			out.flush();
+			// Einlesen
+			String inp = in.readLine();
+			// Ergebnis auswerten
+			String correct = v.getVerbForm(person, plural, tense);
+			if (inp.equals(correct)) {
+
+			}
+
+			else if (inp.equals("q") || inp.equals("quit")) {
+				// exit learn mode
+				return true;
+			} else if (inp.equals("n")) {
+				// jump to next verb
+				return false;
+			}
+
+			else {
+				out.write("Falsch! Korrekte Form: " + correct + "!");
+				out.newLine();
+				out.flush();
+				allFormsCorrect = false;
+				// Fehler in Lernbox vermerken
+				box.addErrorCount(v);
+			}
+		}
+		if (allFormsCorrect) {
+			box.decreaseErrorCount(v);
+			currentHighscore++;
+			if (sessionHighscore < currentHighscore) {
+				sessionHighscore = currentHighscore;
+				out.write("Neuer Session-Highscore! Schon " + sessionHighscore
+						+ " Verben hintereinander richtig!");
+				out.newLine();
+				out.flush();
+				//refresh needed as the wrong number of one verb has been decreased
+				box.refreshFrequentWrongVerbList();
+			}
+		} else
+			currentHighscore = 0;
+
+		return false;
+	}
+	
+
+
 
 }

@@ -158,14 +158,14 @@ acostumbrarse;Indicativo;Indefinido;me acostumbré;te acostumbraste;se acostumbró
 acostumbrarse;Indicativo;Futuro;me acostumbraré;te acostumbrarás;se acostumbrará;nos acostumbraremos;os acostumbraréis;se acostumbrarán
 acostumbrarse;Gerundio;acostumbrándose
 acostumbrarse;Participio;acostumbrado
-acostumbrarse;Significados;
+acostumbrarse;Significados;sich gewöhnen an
 actuar;Indicativo;Presente;actúo;actúas;actúa;actuamos;actuáis;actúan
 actuar;Indicativo;Imperfecto;actuaba;actuabas;actuaba;actuábamos;actuabais;actuaban
 actuar;Indicativo;Indefinido;actué;actuaste;actuó;actuamos;actuasteis;actuaron
 actuar;Indicativo;Futuro;actuaré;actuarás;actuará;actuaremos;actuaréis;actuarán
 actuar;Gerundio;actuando
 actuar;Participio;actuado
-actuar;Significados;
+actuar;Significados;wirken,agieren,handeln
 adivinar;Indicativo;Presente;adivino;adivinas;adivina;adivinamos;adivináis;adivinan
 adivinar;Indicativo;Imperfecto;adivinaba;adivinabas;adivinaba;adivinábamos;adivinabais;adivinaban
 adivinar;Indicativo;Indefinido;adiviné;adivinaste;adivinó;adivinamos;adivinasteis;adivinaron
@@ -564,7 +564,7 @@ ayudar;Indicativo;Indefinido;ayudé;ayudaste;ayudó;ayudamos;ayudasteis;ayudaron
 ayudar;Indicativo;Futuro;ayudaré;ayudarás;ayudará;ayudaremos;ayudaréis;ayudarán
 ayudar;Gerundio;ayudando
 ayudar;Participio;ayudado
-ayudar;Significados;
+ayudar;Significados;helfen
 añadir;Indicativo;Presente;añado;añades;añade;añadimos;añadís;añaden
 añadir;Indicativo;Imperfecto;añadía;añadías;añadía;añadíamos;añadíais;añadían
 añadir;Indicativo;Indefinido;añadí;añadiste;añadió;añadimos;añadisteis;añadieron
@@ -942,7 +942,7 @@ cocinar;Indicativo;Indefinido;cociné;cocinaste;cocinó;cocinamos;cocinasteis;coci
 cocinar;Indicativo;Futuro;cocinaré;cocinarás;cocinará;cocinaremos;cocinaréis;cocinarán
 cocinar;Gerundio;cocinando
 cocinar;Participio;cocinado
-cocinar;Significados;
+cocinar;Significados;kochen
 coger;Indicativo;Presente;cojo;coges;coge;cogemos;cogéis;cogen
 coger;Indicativo;Imperfecto;cogía;cogías;cogía;cogíamos;cogíais;cogían
 coger;Indicativo;Indefinido;cogí;cogiste;cogió;cogimos;cogisteis;cogieron
@@ -1810,7 +1810,7 @@ elegir;Indicativo;Indefinido;elegí;elegiste;eligió;elegimos;elegisteis;eligieron
 elegir;Indicativo;Futuro;elegiré;elegirás;elegirá;elegiremos;elegiréis;elegirán
 elegir;Gerundio;eligiendo
 elegir;Participio;elegido
-elegir;Significados;
+elegir;Significados;wählen
 eliminar;Indicativo;Presente;elimino;eliminas;elimina;eliminamos;elimináis;eliminan
 eliminar;Indicativo;Imperfecto;eliminaba;eliminabas;eliminaba;eliminábamos;eliminabais;eliminaban
 eliminar;Indicativo;Indefinido;eliminé;eliminaste;eliminó;eliminamos;eliminasteis;eliminaron
@@ -1887,7 +1887,7 @@ encontrar;Indicativo;Indefinido;encontré;encontraste;encontró;encontramos;encont
 encontrar;Indicativo;Futuro;encontraré;encontrarás;encontrará;encontraremos;encontraréis;encontrarán
 encontrar;Gerundio;encontrando
 encontrar;Participio;encontrado
-encontrar;Significados;
+encontrar;Significados;treffen
 enfadar;Indicativo;Presente;enfado;enfadas;enfada;enfadamos;enfadáis;enfadan
 enfadar;Indicativo;Imperfecto;enfadaba;enfadabas;enfadaba;enfadábamos;enfadabais;enfadaban
 enfadar;Indicativo;Indefinido;enfadé;enfadaste;enfadó;enfadamos;enfadasteis;enfadaron
@@ -2055,7 +2055,7 @@ enviar;Indicativo;Indefinido;envié;enviaste;envió;enviamos;enviasteis;enviaron
 enviar;Indicativo;Futuro;enviaré;enviarás;enviará;enviaremos;enviaréis;enviarán
 enviar;Gerundio;enviando
 enviar;Participio;enviado
-enviar;Significados;
+enviar;Significados;schicken,senden
 equivocar;Indicativo;Presente;equivoco;equivocas;equivoca;equivocamos;equivocáis;equivocan
 equivocar;Indicativo;Imperfecto;equivocaba;equivocabas;equivocaba;equivocábamos;equivocabais;equivocaban
 equivocar;Indicativo;Indefinido;equivoqué;equivocaste;equivocó;equivocamos;equivocasteis;equivocaron
@@ -2118,7 +2118,7 @@ esperar;Indicativo;Indefinido;esperé;esperaste;esperó;esperamos;esperasteis;espe
 esperar;Indicativo;Futuro;esperaré;esperarás;esperará;esperaremos;esperaréis;esperarán
 esperar;Gerundio;esperando
 esperar;Participio;esperado
-esperar;Significados;
+esperar;Significados;warten
 esquiar;Indicativo;Presente;esquío;esquías;esquía;esquiamos;esquiáis;esquían
 esquiar;Indicativo;Imperfecto;esquiaba;esquiabas;esquiaba;esquiábamos;esquiabais;esquiaban
 esquiar;Indicativo;Indefinido;esquié;esquiaste;esquió;esquiamos;esquiasteis;esquiaron
@@ -2153,7 +2153,7 @@ estudiar;Indicativo;Indefinido;estudié;estudiaste;estudió;estudiamos;estudiastei
 estudiar;Indicativo;Futuro;estudiaré;estudiarás;estudiará;estudiaremos;estudiaréis;estudiarán
 estudiar;Gerundio;estudiando
 estudiar;Participio;estudiado
-estudiar;Significados;
+estudiar;Significados;lernen,studieren
 evacuar;Indicativo;Presente;evacuo;evacuas;evacua;evacuamos;evacuáis;evacuan
 evacuar;Indicativo;Imperfecto;evacuaba;evacuabas;evacuaba;evacuábamos;evacuabais;evacuaban
 evacuar;Indicativo;Indefinido;evacué;evacuaste;evacuó;evacuamos;evacuasteis;evacuaron
@@ -2321,7 +2321,7 @@ fumar;Indicativo;Indefinido;fumé;fumaste;fumó;fumamos;fumasteis;fumaron
 fumar;Indicativo;Futuro;fumaré;fumarás;fumará;fumaremos;fumaréis;fumarán
 fumar;Gerundio;fumando
 fumar;Participio;fumado
-fumar;Significados;
+fumar;Significados;rauchen
 funcionar;Indicativo;Presente;funciono;funcionas;funciona;funcionamos;funcionáis;funcionan
 funcionar;Indicativo;Imperfecto;funcionaba;funcionabas;funcionaba;funcionábamos;funcionabais;funcionaban
 funcionar;Indicativo;Indefinido;funcioné;funcionaste;funcionó;funcionamos;funcionasteis;funcionaron
@@ -2419,7 +2419,7 @@ hablar;Indicativo;Indefinido;hablé;hablaste;habló;hablamos;hablasteis;hablaron
 hablar;Indicativo;Futuro;hablaré;hablarás;hablará;hablaremos;hablaréis;hablarán
 hablar;Gerundio;hablando
 hablar;Participio;hablado
-hablar;Significados;
+hablar;Significados;reden
 hacer;Indicativo;Presente;hago;haces;hace;hacemos;hacéis;hacen
 hacer;Indicativo;Imperfecto;hacía;hacías;hacía;hacíamos;hacíais;hacían
 hacer;Indicativo;Indefinido;hice;hiciste;hizo;hicimos;hicisteis;hicieron
@@ -2503,7 +2503,7 @@ incluir;Indicativo;Indefinido;incluí;incluiste;incluyó;incluimos;incluisteis;inc
 incluir;Indicativo;Futuro;incluiré;incluirás;incluirá;incluiremos;incluiréis;incluirán
 incluir;Gerundio;incluyendo
 incluir;Participio;incluido
-incluir;Significados;
+incluir;Significados;einschließen,umfassen,hinzuzählen
 indicar;Indicativo;Presente;indico;indicas;indica;indicamos;indicáis;indican
 indicar;Indicativo;Imperfecto;indicaba;indicabas;indicaba;indicábamos;indicabais;indicaban
 indicar;Indicativo;Indefinido;indiqué;indicaste;indicó;indicamos;indicasteis;indicaron
@@ -2629,7 +2629,7 @@ invitar;Indicativo;Indefinido;invité;invitaste;invitó;invitamos;invitasteis;invi
 invitar;Indicativo;Futuro;invitaré;invitarás;invitará;invitaremos;invitaréis;invitarán
 invitar;Gerundio;invitando
 invitar;Participio;invitado
-invitar;Significados;
+invitar;Significados;einladen
 invocar;Indicativo;Presente;invoco;invocas;invoca;invocamos;invocáis;invocan
 invocar;Indicativo;Imperfecto;invocaba;invocabas;invocaba;invocábamos;invocabais;invocaban
 invocar;Indicativo;Indefinido;invoqué;invocaste;invocó;invocamos;invocasteis;invocaron
@@ -2944,7 +2944,7 @@ mirar;Indicativo;Indefinido;miré;miraste;miró;miramos;mirasteis;miraron
 mirar;Indicativo;Futuro;miraré;mirarás;mirará;miraremos;miraréis;mirarán
 mirar;Gerundio;mirando
 mirar;Participio;mirado
-mirar;Significados;
+mirar;Significados;schauen,anschauen
 modificar;Indicativo;Presente;modifico;modificas;modifica;modificamos;modificáis;modifican
 modificar;Indicativo;Imperfecto;modificaba;modificabas;modificaba;modificábamos;modificabais;modificaban
 modificar;Indicativo;Indefinido;modifiqué;modificaste;modificó;modificamos;modificasteis;modificaron
@@ -3014,7 +3014,7 @@ nacer;Indicativo;Indefinido;nací;naciste;nació;nacimos;nacisteis;nacieron
 nacer;Indicativo;Futuro;naceré;nacerás;nacerá;naceremos;naceréis;nacerán
 nacer;Gerundio;naciendo
 nacer;Participio;nacido
-nacer;Significados;
+nacer;Significados;geboren werden
 nadar;Indicativo;Presente;nado;nadas;nada;nadamos;nadáis;nadan
 nadar;Indicativo;Imperfecto;nadaba;nadabas;nadaba;nadábamos;nadabais;nadaban
 nadar;Indicativo;Indefinido;nadé;nadaste;nadó;nadamos;nadasteis;nadaron
@@ -3245,7 +3245,7 @@ pensar;Indicativo;Indefinido;pensé;pensaste;pensó;pensamos;pensasteis;pensaron
 pensar;Indicativo;Futuro;pensaré;pensarás;pensará;pensaremos;pensaréis;pensarán
 pensar;Gerundio;pensando
 pensar;Participio;pensado
-pensar;Significados;
+pensar;Significados;denken
 perder;Indicativo;Presente;pierdo;pierdes;pierde;perdemos;perdéis;pierden
 perder;Indicativo;Imperfecto;perdía;perdías;perdía;perdíamos;perdíais;perdían
 perder;Indicativo;Indefinido;perdí;perdiste;perdió;perdimos;perdisteis;perdieron
@@ -3532,14 +3532,14 @@ quedar;Indicativo;Indefinido;quedé;quedaste;quedó;quedamos;quedasteis;quedaron
 quedar;Indicativo;Futuro;quedaré;quedarás;quedará;quedaremos;quedaréis;quedarán
 quedar;Gerundio;quedando
 quedar;Participio;quedado
-quedar;Significados;
+quedar;Significados;bleiben,zurückbleiben,sich mit jmd verabreden (con alguien)
 quedarse;Indicativo;Presente;me quedo;te quedas;se queda;nos quedamos;os quedáis;se quedan
 quedarse;Indicativo;Imperfecto;me quedaba;te quedabas;se quedaba;nos quedábamos;os quedabais;se quedaban
 quedarse;Indicativo;Indefinido;me quedé;te quedaste;se quedó;nos quedamos;os quedasteis;se quedaron
 quedarse;Indicativo;Futuro;me quedaré;te quedarás;se quedará;nos quedaremos;os quedaréis;se quedarán
 quedarse;Gerundio;quedándose
 quedarse;Participio;quedado
-quedarse;Significados;
+quedarse;Significados;sich aufhalten,befinden (en un lugar)
 quejarse;Indicativo;Presente;me quejo;te quejas;se queja;nos quejamos;os quejáis;se quejan
 quejarse;Indicativo;Imperfecto;me quejaba;te quejabas;se quejaba;nos quejábamos;os quejabais;se quejaban
 quejarse;Indicativo;Indefinido;me quejé;te quejaste;se quejó;nos quejamos;os quejasteis;se quejaron
@@ -4211,7 +4211,7 @@ trabajar;Indicativo;Indefinido;trabajé;trabajaste;trabajó;trabajamos;trabajastei
 trabajar;Indicativo;Futuro;trabajaré;trabajarás;trabajará;trabajaremos;trabajaréis;trabajarán
 trabajar;Gerundio;trabajando
 trabajar;Participio;trabajado
-trabajar;Significados;
+trabajar;Significados;arbeiten
 traducir;Indicativo;Presente;traduzco;traduces;traduce;traducimos;traducís;traducen
 traducir;Indicativo;Imperfecto;traducía;traducías;traducía;traducíamos;traducíais;traducían
 traducir;Indicativo;Indefinido;traduje;tradujiste;tradujo;tradujimos;tradujisteis;tradujeron
@@ -4316,7 +4316,7 @@ vencer;Indicativo;Indefinido;vencí;venciste;venció;vencimos;vencisteis;vencieron
 vencer;Indicativo;Futuro;venceré;vencerás;vencerá;venceremos;venceréis;vencerán
 vencer;Gerundio;venciendo
 vencer;Participio;vencido
-vencer;Significados;
+vencer;Significados;besiegen,schlagen,bewingen
 vender;Indicativo;Presente;vendo;vendes;vende;vendemos;vendéis;venden
 vender;Indicativo;Imperfecto;vendía;vendías;vendía;vendíamos;vendíais;vendían
 vender;Indicativo;Indefinido;vendí;vendiste;vendió;vendimos;vendisteis;vendieron
@@ -4365,7 +4365,7 @@ viajar;Indicativo;Indefinido;viajé;viajaste;viajó;viajamos;viajasteis;viajaron
 viajar;Indicativo;Futuro;viajaré;viajarás;viajará;viajaremos;viajaréis;viajarán
 viajar;Gerundio;viajando
 viajar;Participio;viajado
-viajar;Significados;
+viajar;Significados;reisen
 violar;Indicativo;Presente;violo;violas;viola;violamos;violáis;violan
 violar;Indicativo;Imperfecto;violaba;violabas;violaba;violábamos;violabais;violaban
 violar;Indicativo;Indefinido;violé;violaste;violó;violamos;violasteis;violaron
