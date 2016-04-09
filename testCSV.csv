@@ -424,7 +424,7 @@ aprender;Indicativo;Indefinido;aprendí;aprendiste;aprendió;aprendimos;aprendiste
 aprender;Indicativo;Futuro;aprenderé;aprenderás;aprenderá;aprenderemos;aprenderéis;aprenderán
 aprender;Gerundio;aprendiendo
 aprender;Participio;aprendido
-aprender;Significados;
+aprender;Significados;lernen
 apretar;Indicativo;Presente;aprieto;aprietas;aprieta;apretamos;apretáis;aprietan
 apretar;Indicativo;Imperfecto;apretaba;apretabas;apretaba;apretábamos;apretabais;apretaban
 apretar;Indicativo;Indefinido;apreté;apretaste;apretó;apretamos;apretasteis;apretaron
@@ -1999,7 +1999,7 @@ entrar;Indicativo;Indefinido;entré;entraste;entró;entramos;entrasteis;entraron
 entrar;Indicativo;Futuro;entraré;entrarás;entrará;entraremos;entraréis;entrarán
 entrar;Gerundio;entrando
 entrar;Participio;entrado
-entrar;Significados;
+entrar;Significados;eintreten
 entregar;Indicativo;Presente;entrego;entregas;entrega;entregamos;entregáis;entregan
 entregar;Indicativo;Imperfecto;entregaba;entregabas;entregaba;entregábamos;entregabais;entregaban
 entregar;Indicativo;Indefinido;entregué;entregaste;entregó;entregamos;entregasteis;entregaron
@@ -3539,7 +3539,7 @@ quedarse;Indicativo;Indefinido;me quedé;te quedaste;se quedó;nos quedamos;os que
 quedarse;Indicativo;Futuro;me quedaré;te quedarás;se quedará;nos quedaremos;os quedaréis;se quedarán
 quedarse;Gerundio;quedándose
 quedarse;Participio;quedado
-quedarse;Significados;sich aufhalten,befinden (en un lugar)
+quedarse;Significados;sich aufhalten,befinden (en un lugar),bleiben
 quejarse;Indicativo;Presente;me quejo;te quejas;se queja;nos quejamos;os quejáis;se quejan
 quejarse;Indicativo;Imperfecto;me quejaba;te quejabas;se quejaba;nos quejábamos;os quejabais;se quejaban
 quejarse;Indicativo;Indefinido;me quejé;te quejaste;se quejó;nos quejamos;os quejasteis;se quejaron
@@ -3588,7 +3588,7 @@ recibir;Indicativo;Indefinido;recibí;recibiste;recibió;recibimos;recibisteis;rec
 recibir;Indicativo;Futuro;recibiré;recibirás;recibirá;recibiremos;recibiréis;recibirán
 recibir;Gerundio;recibiendo
 recibir;Participio;recibido
-recibir;Significados;
+recibir;Significados;erhalten
 reciclar;Indicativo;Presente;reciclo;reciclas;recicla;reciclamos;recicláis;reciclan
 reciclar;Indicativo;Imperfecto;reciclaba;reciclabas;reciclaba;reciclábamos;reciclabais;reciclaban
 reciclar;Indicativo;Indefinido;reciclé;reciclaste;recicló;reciclamos;reciclasteis;reciclaron

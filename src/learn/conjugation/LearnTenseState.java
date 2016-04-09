@@ -3,6 +3,7 @@ package learn.conjugation;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Random;
 
 import dict.Dictionary;
@@ -18,7 +19,10 @@ public class LearnTenseState implements State {
 	private int sessionHighscore;
 	private int currentHighscore;
 	private static int sessionHighscoreConstant = 2;
-
+	private ArrayList<Verb> verbs;
+	private Verb cVerb;
+	
+	
 	public LearnTenseState(Dictionary dict) {
 		this.dict = dict;
 		ran = new Random();
@@ -29,6 +33,8 @@ public class LearnTenseState implements State {
 	@Override
 	public void execute(BufferedReader in, BufferedWriter out)
 			throws IOException {
+		verbs = new ArrayList<Verb>();
+		verbs.addAll(ConjugationTrainer.currentLearnBox.getVerbs());
 		out.write("Welche Zeit wollen Sie lernen?(Zahl eingeben)");
 		out.newLine();
 		out.flush();
@@ -77,9 +83,11 @@ public class LearnTenseState implements State {
 	}
 
 	private Verb getRandomVerb() {
-		int i = ran.nextInt(ConjugationTrainer.currentLearnBox.getVerbs()
-				.size());
-		return ConjugationTrainer.currentLearnBox.getVerbs().get(i);
+		if(verbs.size()==0)
+			return null;
+		int i = ran.nextInt(verbs.size());
+		cVerb = verbs.get(i);
+		return cVerb;
 	}
 
 	private Verb getNextVerb() {
@@ -147,9 +155,15 @@ public class LearnTenseState implements State {
 	private boolean askTenseFormAllForms(BufferedReader in, BufferedWriter out,
 			int tense, LearnBox box) throws IOException {
 		// Get random verb
-		// Verb v = getRandomVerb();
+		 Verb v = getRandomVerb();
+		 if(v==null){
+			 out.write("Keine Verben mehr in Liste!");
+			 out.newLine();
+			 out.flush();
+			 return true;
+		 }
 		// Get next verb
-		Verb v = getNextVerb();
+		//Verb v = getNextVerb();
 		int person = 1;
 		boolean plural = false;
 		boolean allFormsCorrect = true;
@@ -177,7 +191,7 @@ public class LearnTenseState implements State {
 			// Ergebnis auswerten
 			String correct = v.getVerbForm(person, plural, tense);
 			if (inp.equals(correct)) {
-
+				verbs.remove(cVerb);
 			}
 
 			else if (inp.equals("q") || inp.equals("quit")) {
