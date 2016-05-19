@@ -91,7 +91,7 @@ public class FrequentErrorState implements State {
 		Verb v = box.getFrequentWrongVerb();
 		
 		if(v==null){
-			out.write("Keine häufig falschen Wörter mehr in der Liste!");
+			out.write("Keine hÃ¤ufig falschen Wï¿½rter mehr in der Liste!");
 			out.newLine();
 			out.flush();
 			return true;
@@ -143,7 +143,7 @@ public class FrequentErrorState implements State {
 		Verb v = box.getFrequentWrongVerb();
 		
 		if(v==null){
-			out.write("Keine häufig falschen Wörter mehr in der Liste!");
+			out.write("Keine hÃ¤ufig falschen WÃ¶rter mehr in der Liste!");
 			out.newLine();
 			out.flush();
 			return true;

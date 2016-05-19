@@ -20,7 +20,7 @@ public class SaveDictState implements State {
 	public void execute(BufferedReader in, BufferedWriter out) throws IOException {
 		CSVExporter csv = new CSVExporter();
 		csv.saveVerbForms(url, dict.getVerbs());
-		out.write("Wörterbuch gespeichert in \""+url+"\".");
+		out.write("WÃ¶rterbuch gespeichert in \""+url+"\".");
 		out.newLine();
 		out.flush();
 		ConjugationTrainer.changeState(ConjugationTrainer.mainMenuState);

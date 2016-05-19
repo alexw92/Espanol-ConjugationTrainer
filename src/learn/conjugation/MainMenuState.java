@@ -12,7 +12,7 @@ public class MainMenuState implements State {
 	 * <li>Lernbox erstellen</li>
 	 * <li>Lernbox laden</li>
 	 * <li>Wort suchen</li>
-	 * <li>Gesamtes Wörterbuch lernen</li>
+	 * <li>Gesamtes Wï¿½rterbuch lernen</li>
 	 * </ol>
 	 * 
 	 */

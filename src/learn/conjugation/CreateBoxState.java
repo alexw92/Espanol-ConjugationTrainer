@@ -18,11 +18,11 @@ public class CreateBoxState implements State {
 	
 	@Override
 	public void execute(BufferedReader in, BufferedWriter out) throws IOException {
-		out.write("Wie soll die Lernbox heißen?\n");
+		out.write("Wie soll die Lernbox heiÃŸen?\n");
 		out.flush();
 		String name = in.readLine();
 		LearnBox box = new LearnBox(name, dict);
-		out.write("Geben Sie die Infinitive der Verben ein, die Sie lernen möchten(q zum Beenden):\n");
+		out.write("Geben Sie die Infinitive der Verben ein, die Sie lernen mÃ¶chten(q zum Beenden):\n");
 		out.flush();
 		String line = "";
 		while(!((line = in.readLine())==null)){
@@ -31,14 +31,14 @@ public class CreateBoxState implements State {
 			}
 			Verb v = dict.getVerb(line);
 			if(v==null){
-				out.write("Wort "+line+" konnte nicht im Wörterbuch gefunden werden. Bitte wählen Sie ein anderes:");
+				out.write("Wort "+line+" konnte nicht im WÃ¶rterbuch gefunden werden. Bitte wÃ¤hlen Sie ein anderes:");
 				out.newLine();
 				out.flush();
 				continue;
 			}
 			else{
 				box.addVerb(v);
-				out.write("Wort "+v.getInfinitve()+" hinzugefügt. Weitere Wörter eingeben:");
+				out.write("Wort "+v.getInfinitve()+" hinzugefÃ¼gt. Weitere WÃ¶rter eingeben:");
 				out.newLine();
 				out.flush();
 				continue;
@@ -62,7 +62,7 @@ public class CreateBoxState implements State {
 					sameName = true;
 			}
 		}
-		out.write("Lernbox "+name+" wurde mit "+box.getVerbs().size()+" Wörtern erstellt und gespeichert!");
+		out.write("Lernbox "+name+" wurde mit "+box.getVerbs().size()+" WÃ¶rter(n) erstellt und gespeichert!");
 		out.newLine();
 		out.flush();
 		box.saveLearnBox(null);

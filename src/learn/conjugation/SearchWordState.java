@@ -24,7 +24,7 @@ public class SearchWordState implements State {
 		String word = in.readLine();
 		Verb v = dict.getVerb(word);
 		if(v!=null){
-			out.write(v.getInfinitve()+" wurde im Wörterbuch gefunden. Wollen Sie die Formen ausgeben?(Y/N):");
+			out.write(v.getInfinitve()+" wurde im WÃ¶rterbuch gefunden. Wollen Sie die Formen ausgeben?(Y/N):");
 			out.newLine();
 			out.flush();
 			String inp = in.readLine();
@@ -41,7 +41,7 @@ public class SearchWordState implements State {
 			ConjugationTrainer.changeState(ConjugationTrainer.mainMenuState);
 		}
 		else{
-			out.write(word+" wurde nicht im Wörterbuch gefunden");
+			out.write(word+" wurde nicht im WÃ¶rterbuch gefunden");
 			out.newLine();
 			out.flush();
 				

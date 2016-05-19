@@ -22,16 +22,16 @@ public class LearnBoxState implements State {
 
 	@Override
 	/**
-	 * Opionen für Lernbox Box1: 1. Wörter anzeigen 2. Wort hinzufügen 3. Nach
+	 * Opionen för Lernbox Box1: 1. Wörter anzeigen 2. Wort hinzufögen 3. Nach
 	 * Zeitformen lernen 4. Alle Formen lernen 5. Box löschen
 	 */
 	public void execute(BufferedReader in, BufferedWriter out) throws IOException {
 		LearnBox box = ConjugationTrainer.currentLearnBox;
-		out.write("Optionen für Lernbox " + box.getName() + ":");
+		out.write("Optionen för Lernbox " + box.getName() + ":");
 		out.newLine();
 		out.write("1. Wörter anzeigen\n" + "2. Wort hinzufügen\n" + "3. Bedeutung hinzufügen\n"
 				+ "4. Nach Zeitformen lernen\n" + "5. Alle Formen lernen\n" + "6. Häufig falsche Wörter lernen\n"
-				+ "7. Box speichern\n" + "8. Box löschen\n" + "q  Zurück zum Hauptmenü\n");
+				+ "7. Box speichern\n" + "8. Box löschen\n" + "q  Zurück zum Hauptmenö\n");
 		out.flush();
 
 		// Einlesen
@@ -98,7 +98,7 @@ public class LearnBoxState implements State {
 				}
 				case 8: {
 					out.write("Wollen Sie die Lernbox " + box.getName() + " mit " + box.getVerbs().size()
-							+ " Wörtern wirklich löschen?(Y/N)");
+							+ " Wörter(n) wirklich löschen?(Y/N)");
 					out.newLine();
 					out.flush();
 					String s = in.readLine();
@@ -117,7 +117,7 @@ public class LearnBoxState implements State {
 								Files.delete(p);
 							} catch (IOException e) {
 								out.write("Lernbox " + box.getName()
-										+ " konnte nicht gelöscht werden!(Auf Windows einfach die gewünschte File selbst im Ordner \"LearnBoxes\" Löschen)");
+										+ " konnte nicht gelöscht werden!(Auf Windows einfach die gewünschte File selbst im Ordner \"LearnBoxes\" löschen)");
 								out.newLine();
 								out.flush();
 								ioexception = true;
