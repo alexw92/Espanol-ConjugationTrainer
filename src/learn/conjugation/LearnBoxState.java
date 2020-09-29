@@ -22,16 +22,16 @@ public class LearnBoxState implements State {
 
 	@Override
 	/**
-	 * Opionen för Lernbox Box1: 1. Wörter anzeigen 2. Wort hinzufögen 3. Nach
-	 * Zeitformen lernen 4. Alle Formen lernen 5. Box löschen
+	 * Opionen fï¿½r Lernbox Box1: 1. Wï¿½rter anzeigen 2. Wort hinzufï¿½gen 3. Nach
+	 * Zeitformen lernen 4. Alle Formen lernen 5. Box lï¿½schen
 	 */
 	public void execute(BufferedReader in, BufferedWriter out) throws IOException {
 		LearnBox box = ConjugationTrainer.currentLearnBox;
-		out.write("Optionen för Lernbox " + box.getName() + ":");
+		out.write("Optionen fÃ¼r Lernbox " + box.getName() + ":");
 		out.newLine();
-		out.write("1. Wörter anzeigen\n" + "2. Wort hinzufügen\n" + "3. Bedeutung hinzufügen\n"
-				+ "4. Nach Zeitformen lernen\n" + "5. Alle Formen lernen\n" + "6. Häufig falsche Wörter lernen\n"
-				+ "7. Box speichern\n" + "8. Box löschen\n" + "q  Zurück zum Hauptmenö\n");
+		out.write("1. WÃ¶rter anzeigen\n" + "2. Wort hinzufÃ¼gen\n" + "3. Bedeutung hinzufÃ¼gen\n"
+				+ "4. Nach Zeitformen lernen\n" + "5. Alle Formen lernen\n" + "6. HÃ¤ufig falsche WÃ¶rter lernen\n"
+				+ "7. Box speichern\n" + "8. Box lÃ¶schen\n" + "q  ZurÃ¼ck zum HauptmenÃ¼\n");
 		out.flush();
 
 		// Einlesen
@@ -49,13 +49,13 @@ public class LearnBoxState implements State {
 			if (!fail)
 				switch (zahl) {
 				case 1: {
-					// Zeige alle Wörter, bleibe in diesem Zustand
+					// Zeige alle Wï¿½rter, bleibe in diesem Zustand
 					out.write(box.toString());
 					out.flush();
 					break;
 				}
 				case 2: {
-					out.write("Geben Sie das Wort ein, dass Sie hinzufügen wollen:");
+					out.write("Geben Sie das Wort ein, dass Sie hinzufÃ¼gen wollen:");
 					out.newLine();
 					out.flush();
 					String wort = in.readLine();
@@ -91,14 +91,14 @@ public class LearnBoxState implements State {
 				}
 				case 7: {
 					box.saveLearnBox(null);
-					out.write("Lernbox " + box.getName() + " mit " + box.getVerbs().size() + " Wörtern gespeichert!");
+					out.write("Lernbox " + box.getName() + " mit " + box.getVerbs().size() + " WÃ¶rtern gespeichert!");
 					out.newLine();
 					out.flush();
 					break;
 				}
 				case 8: {
 					out.write("Wollen Sie die Lernbox " + box.getName() + " mit " + box.getVerbs().size()
-							+ " Wörter(n) wirklich löschen?(Y/N)");
+							+ " WÃ¶rter(n) wirklich lÃ¶schen?(Y/N)");
 					out.newLine();
 					out.flush();
 					String s = in.readLine();
@@ -117,19 +117,19 @@ public class LearnBoxState implements State {
 								Files.delete(p);
 							} catch (IOException e) {
 								out.write("Lernbox " + box.getName()
-										+ " konnte nicht gelöscht werden!(Auf Windows einfach die gewünschte File selbst im Ordner \"LearnBoxes\" löschen)");
+										+ " konnte nicht gelÃ¶scht werden!(Auf Windows einfach die gewÃ¼nschte File selbst im Ordner \"LearnBoxes\" lÃ¶schen)");
 								out.newLine();
 								out.flush();
 								ioexception = true;
 							}
 							if (!ioexception) {
-								out.write("Lernbox " + box.getName() + " gelöscht!");
+								out.write("Lernbox " + box.getName() + " gelÃ¶scht!");
 								out.newLine();
 								out.flush();
 							}
 						}
 					} else {
-						out.write("Löschvorgang abgebrochen!");
+						out.write("LÃ¶schvorgang abgebrochen!");
 						out.newLine();
 						out.flush();
 					}

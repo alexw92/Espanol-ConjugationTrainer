@@ -19,13 +19,13 @@ public class AddMeaningState implements State {
 
 	@Override
 	public void execute(BufferedReader in, BufferedWriter out) throws IOException {
-		out.write("Für welches Wort wollen Sie eine Bedeutung hinzufügen?");
+		out.write("FÃ¼r welches Wort wollen Sie eine Bedeutung hinzufÃ¼gen?");
 		out.newLine();
 		out.flush();
 		String name = in.readLine();
 		Verb v = dict.getVerb(name);
 		if (v == null) {
-			out.write(name + " konnte nicht im Wörterbuch gefunden werden!");
+			out.write(name + " konnte nicht im WÃ¶rterbuch gefunden werden!");
 			out.newLine();
 			out.flush();
 			ConjugationTrainer.changeState(ConjugationTrainer.learnBoxState);
@@ -77,12 +77,12 @@ public class AddMeaningState implements State {
 							count++;
 						}
 					}
-					out.write(count+" Bedeutungen hinzugefügt. Im Hauptmenü können Sie diese Veränderung speichern:");
+					out.write(count+" Bedeutungen hinzugefÃ¼gt. Im HauptmenÃ¼ kÃ¶nnen Sie diese VerÃ¤nderung speichern:");
 					out.newLine();
 					out.flush();
 				} else {
 					v.addMeaning(inp);
-					out.write("Bedeutung hinzugefügt. Im Hauptmenü können Sie diese Veränderung speichern:");
+					out.write("Bedeutung hinzugefÃ¼gt. Im HauptmenÃ¼ kÃ¶nnen Sie diese VerÃ¤nderung speichern:");
 					out.newLine();
 					out.flush();
 				}

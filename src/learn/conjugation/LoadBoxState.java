@@ -33,7 +33,7 @@ public class LoadBoxState implements State {
 		if (learnboxes.size() == 0) {
 			out.write("Es konnten keine Lernboxen im Ordner " + fo.getName()
 					+ " gefunden werden.\n "
-					+ "Bitte erstellen Sie im Hauptmenü eine neue Lernbox");
+					+ "Bitte erstellen Sie im HauptmenÃ¼ eine neue Lernbox");
 			out.newLine();
 			out.flush();
 			ConjugationTrainer.changeState(ConjugationTrainer.mainMenuState);

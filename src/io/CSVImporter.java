@@ -61,7 +61,7 @@ public class CSVImporter implements WordImporter {
 						temp = Verb.FUTURO;
 					else if (t.equals("Imperfecto"))
 						temp = Verb.IMPERFECTO;
-					else if (t.equals("Pretérito"))
+					else if (t.equals("PretÃ©rito"))
 						temp = Verb.INDEFINIDO;
 					// Meaning of this verb is also saved in tense column
 					else if (t.equals("Significados")) {

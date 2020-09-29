@@ -20,10 +20,10 @@ public class MainMenuState implements State {
 	public void execute(BufferedReader in, BufferedWriter out)
 			throws IOException {
 		boolean fail = false;
-		out.write("Konjugations-Trainer Hauptmenü\n" + "1: Lernbox erstellen\n"
+		out.write("Konjugations-Trainer HauptmenÃ¼\n" + "1: Lernbox erstellen\n"
 				+ "2: Lernbox laden\n" + "3: Wort suchen\n"
-				+ "4: Gesamtes Wörterbuch lernen\n"
-				+ "5: Wörterbuch speichern\n" + "q: Programm beenden\n"
+				+ "4: Gesamtes WÃ¶rterbuch lernen\n"
+				+ "5: WÃ¶rterbuch speichern\n" + "q: Programm beenden\n"
 				+ "Bitte Option(Zahl) eingeben:");
 		out.newLine();
 		out.flush();
