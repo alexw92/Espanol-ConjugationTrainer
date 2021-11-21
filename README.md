@@ -1,2 +1,2 @@
 # Enspanol-ConjugationTrainer
-Spanish conjugation trainer in Java
+German-Spanish conjugation trainer in Java
